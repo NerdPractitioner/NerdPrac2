@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+      <!-- JUMBOTRON HEADER-->
+      <div id="banner" class="jumbotron jumbotron-fluid ">
+            <div class="container">
+              <h1 class="display-4 text-center font-weight-bold">Nerd Practitioner</h1>
+              <p class="lead text-center font-weight-bold">Stay awhile and listen</p>
+            </div>
+          </div>
+      <!-- /JUMBOTRON HEADER-->
+      <!-- ABOUT ME Columns-->
+      <div id="bio" class=" container-fluid pb-3">
+        <h1 class="text-center bg-primary text-light mt-2">About Me</h1>
+            <div class="row bg-white">
+              <!--Profile Pic-->
+              <div class="col-sm ">
+                <img id="profile-img" class="profile m-3  img-fluid d-block rounded-circle border border-secondary" src="img/Profile Pic.jpg" alt="profile picture" >
+              </div>
+              <!--Bio-->
+              <div class="col-sm-6 ml-1">
+                <h3>Bio</h3>
+                <p>Matthew Holmes is a full stack developer specializing in Python with a Bachelors of Science in Economics (focused in Management) from Oregon State University. <br><br>
+                 
+                  Matthew completed this degree program and his software training while working full time and taking a full course load. 
+                  During this time he worked in the insurance and financial services industry as a licensed agent for AAA Oregon Idaho. 
+                  There he learned principals of risk analysis, how to deliver an exceptional customer and end user experience and how to work in a high stress, heavily regulated environment.<span id="dots">...</span><span style="display: none"id="more"><br><br> 
+                  
+                  In addition to his technical experience Matthew is an artist and a lover of all things nerdy. 
+                  He learned to draw from studying D&D books and has been developing his passion for problem solving since childhood, playing Clue Finders on his Windows 95. <br><br>
+                  
+                  Matthew is a lifelong learner who has a passion for mentoring others and helping introverts like himself embrace their strengths through his website (nerd practitioner).
+                  Matthew is currently seeking employment as a mid level full stack software engineer and is focused on finding a diverse team that values collaboration, mentor-ship, continuous improvement and putting others first.</span></p>
+                  <button onclick="myFunction()" id="myBtn" type="button" class="btn btn-info">Read more</button>
+                </div>
+                <!--Skills-->
+              <div class="col-sm">
+                  <h3>Skills</h3>
+                  <a href="https://www.w3.org/standards/webdesign/htmlcss" class="badge badge-primary">HTML/CSS</a>
+                  <a href="https://en.wikipedia.org/wiki/JavaScript" class="badge badge-primary">JavaScript</a>
+                  <a href="https://www.python.org/" class="badge badge-success">Python</a>
+                  <a href="https://getbootstrap.com/" class="badge badge-primary">Bootstrap</a>
+                  <a href="https://www.stata.com/" class="badge badge-warning">STATA</a>
+                  <a href="https://github.com/" class="badge badge-info">GitHub</a>
+                  <a href="https://techterms.com/definition/wamp" class="badge badge-info">WAMP</a>
+                  <a href="https://www.djangoproject.com/" class="badge badge-info">Django</a>
+                  <a href="https://jquery.com/" class="badge badge-info">jQuery</a>
+
+              </div>
+            </div>
+        </div>
+
+
+      <!-- /ABOUT ME-->
+      <!-- PROJECT CARD DECKS-->
+      <div class="container-fluid  border-dark mt-2 pt-3 pb-1" >
+      <h1 class="text-center bg-primary text-light pb-2">Projects</h1><br>
+      <p class="text-center" id="description">I completed the following projects during my training at<a href="https://www.learncodinganywhere.com/"> The Tech Academy</a>. Each can be followed to a GitHub repository.</p>
+      <div id="projects" class="card-deck bg-white">
+          <div class="row mx-3 mb-3">
+            <div class="card">
+              <a href="https://github.com/NerdPractitioner/Tech-Academy-HTML-CSS-Full-Projects/tree/master/JS%20Final%20Project%20Pizza%20Menu">
+              <img src="img/javascript.svg" class="card-img-top h-50 pt-1" alt="Pizza Image">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Menu</h5>
+                <p class="card-text">This project focused on creating a functional Pizza ordering menu with JavaScript.</p>
+              </div>
+            </a>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/NerdPractitioner/Tech-Academy-HTML-CSS-Full-Projects/tree/master/Space%20Station%20Project">
+              <img  alt="Space Shuttle" src="img/bootstrap.svg" class="card-img-top h-50">
+              <div class="card-body">
+                <h5 class="card-title">Space Station Project</h5>
+                <p class="card-text">This project had us create a fake space station company with a gallery showing different planets to travel too.</p>
+              </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/NerdPractitioner/Tech-Academy-HTML-CSS-Full-Projects/tree/master/project_cinema2">
+                <img src="img/javascript.svg" class="card-img-top h-50" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript Project</h5>
+                  <p class="card-text">In this project, I created a cinema website with working jquery forms (no database linked)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row mx-3">
+            <div class="card">
+              <a href="https://github.com/NerdPractitioner/The-Tech-Academy-Python-Projects/tree/master/techproject">
+                <img src="img/django.svg" class="card-img-bottom h-50" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Django Project</h5>
+                  <p class="card-text">In this project, I created a hotel website where an admin can create, read, update and delete menu items</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/NerdPractitioner/The-Tech-Academy-SQL-Coding-Projects">
+                <img src="img/mysql.svg" class="card-img-bottom h-50" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SQL Project</h5>
+                  <p class="card-text">In this project, I created a Library content management database with SQL Server</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <a href="https://github.com/NerdPractitioner/Web-Scraper">
+                <img src="img/django.svg" class="card-img-bottom h-50" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Django Web-scraper</h5>
+                  <p class="card-text">In this project, I collaborated with a team of 5+ peers to create a web app dashboard with several scraping interfaces</p>
+                </div>
+              </a>
+            </div>
+
+            </div>
+          </div>
+        </div>
